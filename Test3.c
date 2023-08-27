@@ -85,7 +85,7 @@ int main()
 				printf("Staff Name : %s \n", staffname);
 				printf("\n");
 				printf("-----------------------------\n");
-				printf("1.Mark Student's Result\n");
+				printf("1.Enter Student's Result\n");
 				printf("Please select mode by using 1:\n");
 				printf("Please select mode : ");
 				scanf("%d", &mode);
@@ -105,6 +105,10 @@ int main()
 
 				for (int i = 1; i <= 3; ++i)
 				{
+					printf("Please enter current semester session : ");
+					scanf("%s", &semesterSession);
+					printf("\n");
+
 					printf("Please enter number of course intake : ");
 					scanf("%d", &courseintake);
 					printf("\n");
@@ -167,10 +171,6 @@ int main()
 						totalQualityPoint += qualityPoint * creditHour;
 						totalCreditHour += creditHour;
 					}
-
-					printf("Please enter current semester session : ");
-					scanf("%s", &semesterSession);
-					printf("\n");
 
 					totalQualityPointAllSem += totalQualityPoint;
 					totalCreditHourAllSem += totalCreditHour;
